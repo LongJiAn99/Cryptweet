@@ -1,0 +1,74 @@
+
+.landing-img {
+    position: absolute;
+    display: flex;
+    right: 30px;
+    max-width: 1024px; 
+    max-height: 768px;
+    min-width: 512px;
+    min-height: 384px;
+    height: 85%;
+    width: auto;
+}
+
+.landing-div {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    flex: 1;
+    position: relative; /*REQUIRED FOR Z-INDEX*/
+    z-index: 1;
+    margin: 10% 10% 0%;
+    color: whitesmoke;
+    font-size: calc(50px + 2.4vw);
+}
+
+
+button {
+    flex: 1;
+    position: relative; /*REQUIRED FOR Z-INDEX*/
+    z-index: 1;
+    margin: 2% 12% 10%; /* TOP LR BTM */
+    border-radius: 7px;
+    background-color: transparent;
+    border: solid;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: calc(20px + 0.5vw);
+    padding: 16px;
+    width: calc(100px + 5%);
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+button:hover span {
+    padding-right: 25px;
+}
+
+button:hover {
+    background-color: rgb(161, 48, 109);
+    border-color: rgb(161, 48, 109);
+}
+
+button:hover span:after {
+    opacity: 1;
+    right: 0;
+}  

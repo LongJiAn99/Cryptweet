@@ -1,0 +1,11 @@
+
+{
+    "/api": {
+      "target": "https://api.twitter.com/2/tweets/search/all",
+      "secure": false,
+      "pathRewrite": {
+        "^/api": ""
+      },
+      "changeOrigin": true
+    }
+  }

@@ -1,0 +1,30 @@
+<table>
+  <tr>
+    <th>#</th>
+    <th>Coin</th>
+    <th>Price</th>
+    <th>% Change</th>
+    <th>Mkt Cap</th>
+    <th>Tweets</th>
+    <th>Verified Tweets</th>
+  </tr>
+  <tr *ngFor="let coin of coins">
+    <td>{{ coin.id }}</td>
+    <td>{{ coin.name }}</td>
+    <td>{{ coin.price }}</td>
+    <td>{{ coin.percentChange }}</td>
+    <td>{{ coin.mktCap }}</td>
+    <td>{{ coin.tweets }}</td>
+    <td>{{ coin.verifiedTweets }}</td>
+  </tr>
+</table>
+
+<!--         <td ><app-crypto-list-item  [attribute] = "coin.id" ></app-crypto-list-item></td>
+<td ><app-crypto-list-item  [attribute] = "coin.name" ></app-crypto-list-item></td>
+<td ><app-crypto-list-item  [attribute] = "coin.price" ></app-crypto-list-item></td>
+<td ><app-crypto-list-item  [attribute] = "coin.percentChange" ></app-crypto-list-item></td>
+<td ><app-crypto-list-item  [attribute] = "coin.mktCap" ></app-crypto-list-item></td>
+<td ><app-crypto-list-item  [attribute] = "coin.tweets" ></app-crypto-list-item></td>
+<td ><app-crypto-list-item  [attribute] = "coin.verifiedTweets " ></app-crypto-list-item></td> -->
+
+

@@ -1,0 +1,28 @@
+h1 {
+    color: whitesmoke;
+    padding-top: 50px;
+    font-size: 3rem;
+    padding-left: 30px;
+}
+
+
+.hub-img {
+    position: absolute;
+    z-index: -1;
+    left: 40px;
+    bottom: 10px;
+    height: 40%;
+    width: auto;
+    mix-blend-mode: screen;
+    opacity: 0.6;
+}
+
+.coin-img {
+    position: absolute;
+    z-index: -1;
+    top: 20px;
+    right: 0;
+    height: 60%;
+    width: auto;
+    mix-blend-mode: screen;
+}

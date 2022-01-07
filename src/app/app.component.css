@@ -1,0 +1,26 @@
+:host {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+footer {
+    position: absolute;
+    z-index: 1;
+    bottom: 3%;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(187, 186, 186);
+    flex-wrap: wrap;
+}
+
+footer a {
+    color: rgb(148, 40, 139);
+    text-decoration: none;
+}

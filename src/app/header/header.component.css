@@ -1,0 +1,37 @@
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(240, 240, 240);
+    opacity: 0.7;
+    flex-wrap: wrap;
+    mix-blend-mode: screen;
+}
+
+header.div {
+    flex-direction: column;
+}
+
+header a:hover {
+    color: rgb(217, 79, 230);
+}
+
+nav a {
+    margin-right: 30px;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: larger;
+}
+
+.logo-img {
+    margin-left: 2rem;
+    width : 60px;
+    height: auto; /*to preserve the aspect ratio of the image*/
+}
