@@ -2,5 +2,18 @@
 
 body {
     background-color: #04172c;
-    overflow: hidden;
+    overflow:hidden;
 }
+
+table {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #464768;
+    background: linear-gradient(rgba(99, 136, 138, 0.5), #22214b);
+    border-collapse: collapse;
+  }
+
+  .tbody {
+      overflow: scroll;
+  }

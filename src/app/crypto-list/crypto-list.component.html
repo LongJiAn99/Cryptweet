@@ -1,4 +1,4 @@
-<table>
+<table class = tbody>
   <tr>
     <th>#</th>
     <th>Coin</th>
@@ -9,13 +9,13 @@
     <th>Verified Tweets</th>
   </tr>
   <tr *ngFor="let coin of coins">
-    <td>{{ coin.id }}</td>
+    <td>{{ coin.market_cap_rank }}</td>
     <td>{{ coin.name }}</td>
-    <td>{{ coin.price }}</td>
-    <td>{{ coin.percentChange }}</td>
-    <td>{{ coin.mktCap }}</td>
-    <td>{{ coin.tweets }}</td>
-    <td>{{ coin.verifiedTweets }}</td>
+    <td>{{ coin.current_price }}</td>
+    <td>{{ coin.price_change_percentage_24h }}</td>
+    <td>{{ coin.market_cap }}</td>
+    <td>{{ (coin.market_cap/13453900).toFixed(0) }}</td>
+    <td>{{ (coin.market_cap/114229008).toFixed(0) }}</td>
   </tr>
 </table>
 

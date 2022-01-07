@@ -1,6 +1,6 @@
 import {Coin} from './Coin'
 
-export const COINS: Coin[] = [
+/* export const COINS: Coin[] = [
     {
         id: 1,
         name: 'Bitcoin',
@@ -64,4 +64,4 @@ export const COINS: Coin[] = [
         tweets: 43094,
         verifiedTweets: 2764,
     },
-]
+] */
