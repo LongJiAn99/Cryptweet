@@ -1,5 +1,19 @@
 # Cryptweet
 
+
+<p align="center">
+<img width="70%" src=https://github.com/ryyant/Mart-Aid/blob/main/assets/applogo.png >
+</p>
+
+<p align="center">
+<img width="70%" src=https://github.com/ryyant/Mart-Aid/blob/main/assets/landing-page.png >
+</p>
+
+<p align="center">
+<img width="70%" src=https://github.com/ryyant/Mart-Aid/blob/main/assets/dashboard-page.png >
+</p>
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
 
 ## Inspiration
