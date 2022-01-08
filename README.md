@@ -2,15 +2,15 @@
 
 
 <p align="center">
-<img width="70%" src=https://github.com/ryyant/Mart-Aid/blob/main/assets/applogo.png >
+<img width="70%" src=/src/assets/applogo.png >
 </p>
 
 <p align="center">
-<img width="70%" src=https://github.com/ryyant/Mart-Aid/blob/main/assets/landing-page.png >
+<img width="100%" src=/src/assets/landing-page.png >
 </p>
 
 <p align="center">
-<img width="70%" src=https://github.com/ryyant/Mart-Aid/blob/main/assets/dashboard-page.png >
+<img width="100%" src=/src/assets/dashboard-page.png >
 </p>
 
 
