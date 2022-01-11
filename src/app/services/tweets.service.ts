@@ -2,19 +2,14 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http'
 import { Observable } from 'rxjs'
 
-
-// The code below sets the bearer token from your environment variables
-// To set environment variables on macOS or Linux, run the export command below from the terminal:
-// export BEARER_TOKEN='YOUR-TOKEN'
-const token = 'AAAAAAAAAAAAAAAAAAAAABteXwEAAAAAYc5wJZS5E4xwI0bqRVIdB0xntQE%3Dhl7lwDLHYtdp2Ct27A5FkG74LCXSaFwMWnsnZ4FL4hQ9zGPysH';
-
 // https://api.twitter.com/2
-const endpointUrl = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=9&page=1&sparkline=false";
+const geckoUrl = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=9&page=1&sparkline=false";
+const twitterUrl = "/api/2/tweets?ids=100";
 
 const httpOptions = {
   headers: new HttpHeaders({
     'Content-Type': 'application/json',
-    Authorization: 'AAAAAAAAAAAAAAAAAAAAABteXwEAAAAAYc5wJZS5E4xwI0bqRVIdB0xntQE%3Dhl7lwDLHYtdp2Ct27A5FkG74LCXSaFwMWnsnZ4FL4hQ9zGPysH'
+    Authorization: 'Bearer AAAAAAAAAAAAAAAAAAAAAPFtXwEAAAAAXxkkIK2cOQn%2FYCOmHsjirbiPPhg%3DK2nhf4avbNhyQfniJRfT6ISdIUpMRrNElSZMsYW1VY2W8bLp9L'
   }),
 };
 
@@ -31,9 +26,13 @@ export class TweetsService {
   }
 
   getCoins(): Observable<any> {
-    let x = this.http.get(endpointUrl);
+    let x = this.http.get(geckoUrl);
      x.forEach(value => console.log(value.valueOf())) 
     return x;
+  }
+
+  getTweets(): void {
+    this.http.get(twitterUrl, httpOptions).subscribe(x => console.log(x));
   }
 
 

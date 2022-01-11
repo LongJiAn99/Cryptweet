@@ -22,6 +22,7 @@ export class CryptoListComponent implements OnInit {
   ngOnInit(): void {
    this.tweetsService.getCoins().subscribe(value => this.coins = value)
    console.log(this.coins)
+   this.tweetsService.getTweets();
   }
 
 }
