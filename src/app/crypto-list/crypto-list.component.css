@@ -2,11 +2,10 @@ table {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-  background: #464768;
-  background: linear-gradient(rgba(99, 136, 138, 0.5), #22214b);
+  background: linear-gradient(rgba(58, 74, 99, 0.5), #1a193d);
   border-collapse: collapse;
-  overflow-y: scroll !important;
   height:min-content;
+  border-radius: 10px;
 }
 
 td {
@@ -24,8 +23,45 @@ th {
 
 tr {
   height: 50px;
+  border-radius: 10px;
 }
 
 body {
   height:auto;
+}
+
+.coin-row:hover {
+  animation-name: coin-row;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes coin-row {
+  from {background-color: rgb(57, 23, 95);}
+  to {background-color: rgba(117, 35, 155, 0.521);}
+}
+
+.border-right {
+  border-radius: 0 20px 20px 0;
+}
+
+.border-left {
+  border-radius: 20px 0 0 20px;
+}
+
+.header-border-right {
+  border-radius: 0 10px 0 0;
+}
+
+.header-border-left {
+  border-radius: 10px 0 0 0;
+}
+
+.positive {
+  color: rgb(43, 128, 43);
+}
+
+.negative {
+  color: rgb(148, 13, 13);
 }

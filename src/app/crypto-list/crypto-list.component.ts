@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-/* import { COINS } from '../mock-coins'; */
 import { Coin } from '../Coin';
-import TwitterApi from 'twitter-api-v2';
 import { TweetsService } from '../services/tweets.service';
 
 

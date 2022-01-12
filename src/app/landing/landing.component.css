@@ -72,8 +72,3 @@ button:hover span:after {
     opacity: 1;
     right: 0;
 }  
-
-.landing-body {
-    background-color: #04172c;
-    overflow-y: hidden;
-}

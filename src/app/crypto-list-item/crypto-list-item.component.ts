@@ -1,5 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Coin } from "../Coin";
 
 @Component({
   selector: 'app-crypto-list-item',
