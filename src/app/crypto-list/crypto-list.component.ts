@@ -2,25 +2,24 @@ import { Component, OnInit } from '@angular/core';
 import { Coin } from '../Coin';
 import { TweetsService } from '../services/tweets.service';
 
-
-
-
 @Component({
   selector: 'app-crypto-list',
   templateUrl: './crypto-list.component.html',
-  styleUrls: ['./crypto-list.component.css']
+  styleUrls: ['./crypto-list.component.css'],
 })
-
 export class CryptoListComponent implements OnInit {
-  coins: Coin[] = []; 
-  tweets: Object | undefined;
+  coins: Coin[] = [];
 
-  constructor(private tweetsService: TweetsService) { }
+  constructor(private tweetsService: TweetsService) {}
 
   ngOnInit(): void {
-   this.tweetsService.getCoins().subscribe(value => this.coins = value)
-   console.log(this.coins)
-   this.tweetsService.getTweets();
+    this.tweetsService.getCoins().subscribe((value) => {
+      this.coins = value;
+      this.coins.forEach((x) => {
+        this.tweetsService.getTweets(x.name).subscribe((y) => {
+          x.tweets = y.meta.total_tweet_count;
+        });
+      });
+    });
   }
-
 }
